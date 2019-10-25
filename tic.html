@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>TicTacToe</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" type="text/css" href="bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="tic.css">
+	</head>
+
+	<h1>Tic Tac Toe</h1>
+
+	<div id="scores">
+		<div id="leftside" class="custom">
+			<div>user :</div>
+			<div id="huscore">0</div>
+			<div> | </div>
+		</div>
+
+		<div id="rightside" class="custom">
+			<div> | </div>
+			<div>comp :</div>
+			<div id="aiscore">0</div>
+		</div>
+	</div>
+
+	
+
+	<body>
+		<hr>
+		<table class="container-fluid board">
+			<tr class="row">
+				<td class="cell" id="0"></td>
+				<td class="cell" id="1"></td>
+				<td class="cell" id="2"></td>
+			</tr>
+
+			<tr class="row">
+				<td class="cell" id="3"></td>
+				<td class="cell" id="4"></td>
+				<td class="cell" id="5"></td>
+			</tr>
+
+			<tr class="row">
+				<td class="cell" id="6"></td>
+				<td class="cell" id="7"></td>
+				<td class="cell" id="8"></td>
+			</tr>
+		</table>
+
+		
+		<!--popup window for match result-->
+		<div class="endgame">
+			<div class="text"></div>
+		</div>
+
+		<div id="redobutton">
+			<button class="btn btn-info" onClick="startGame()">Play Again</button>
+			<!--on click runs the function to start the game-->
+		</div>
+
+
+		<script type="text/javascript" src="tic.js"></script>
+		
+	</body>
+
+</html>

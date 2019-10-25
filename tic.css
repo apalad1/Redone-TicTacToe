@@ -1,0 +1,106 @@
+td{
+	border: 5px solid purple;
+	height: 200px;
+	width: 200px;
+	text-align: center;
+	font-size: 30px;
+}
+
+
+
+/*for the gradient */
+body{
+	background:linear-gradient(-46deg, #ff789a, #7888ff, #78ffc9, #78aeff);
+	background-size: 400% 400%;
+	animation:gradient 20s ease infinite;
+}
+
+@keyframes gradient{
+	0%{
+		background-position: 0% 50%;
+	}
+	50%{
+		background-position: 100% 50%;
+	}
+	100%{
+		background-position: 0% 50%;
+	}
+}
+/*for the gradient */
+
+div.custom{
+	display: inline-flex;
+	font-size: 20px;
+}
+
+#rightside{
+	color: red;
+}
+
+h1{
+	text-align: center;
+}
+
+/* line under h1 */
+hr{
+	width: 45%;
+	border-top: 1px solid #f8f8f8;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+/* line under h1 */
+
+
+table{
+	margin-bottom: 20px;
+}
+
+#redobutton{
+	text-align: center;
+}
+
+/* removes the outer edges of the grid */
+table.board tr.row:first-child td.cell{
+	border-top: 0;
+}
+table.board tr.row:last-child td.cell{
+	border-bottom: 0;
+}
+table.board tr.row td.cell:first-child{
+	border-left: 0;
+}
+table.board tr.row td.cell:last-child{
+	border-right: 0;
+}
+/* removes the outer edges of the grid */
+
+
+tr.row td.cell{
+	cursor: pointer;
+}
+
+div.endgame{
+
+	display: none;
+	width: 300px;
+	height: 170px;
+	top: 120px;
+	background-color:rgba(255, 153, 221, 0.7);
+	border-color: pink;
+	position: absolute;
+	left: 50%;
+	margin-left: -150px;
+	margin-top: 196px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: center;
+	border-radius: 5px;
+	color: white;
+	font-size: 2cm;
+	
+}
+
+/* scoreboard stuff */
+
+.scoreboard{
+	font-size: 30px;
+}
